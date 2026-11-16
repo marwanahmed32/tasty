@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><!-- Arabic site? change to lang="ar" dir="rtl" -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tasty Corner | Restaurant & Cafe</title>
+<meta name="description" content="Fresh food, great coffee and a warm atmosphere.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ========== 1. NAVBAR (change logo text + links here) ========== -->
+<!-- NAVBAR: edit logo + links here (same block on every page) -->
+<header class="nav"><div class="container nav-in"><a href="index.html" class="logo">Tasty<span>Corner</span></a>
+<nav id="menu"><a href="index.html" class='active'>Home</a><a href="about.html">About</a><a href="menu.html">Menu</a><a href="contact.html">Contact</a><a href="contact.html#reserve" class="btn sm">Book a Table</a></nav><button class="burger" id="burger" aria-label="Menu">&#9776;</button></div></header>
+
+<!-- ========== 2. HERO (image: images/hero.svg) ========== -->
+<section class="hero" style="--img:url(images/hero.svg)">
+  <div class="container">
+    <p class="eyebrow">Since 2015</p>
+    <h1>Where Great Food<br>Meets Good Moments</h1>
+    <p class="lead">Fresh ingredients, freshly roasted coffee, and a place you will want to come back to.</p>
+    <a href="menu.html" class="btn">View Menu</a>
+    <a href="contact.html#reserve" class="btn ghost">Reserve</a>
+  </div>
+</section>
+
+<!-- ========== 3. ABOUT (image: images/about.svg) ========== -->
+<section id="about" class="section">
+  <div class="container grid2">
+    <div class="photo" style="--img:url(images/about.svg)"></div>
+    <div>
+      <p class="eyebrow">Our Story</p>
+      <h2>Made with passion, served with a smile</h2>
+      <p>Write a short story about your restaurant here. Tell guests what makes you special: your recipes, your beans, your team.</p>
+      <ul class="stats">
+        <li><b>10+</b>Years</li><li><b>50+</b>Dishes</li><li><b>5K+</b>Happy guests</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 4. MENU ==========
+ HOW TO EDIT: each .item is one dish. Copy a whole <article class="item">...</article> block to add one.
+ data-cat must match a tab: coffee / food / dessert. -->
+<section id="menu-section" class="section alt">
+  <div class="container">
+    <p class="eyebrow center">Our Menu</p><h2 class="center">Taste the Favorites</h2><p class="center"><a href="menu.html" class="btn sm">See full menu</a></p>
+    <div class="tabs">
+      <button class="tab active" data-filter="all">All</button>
+      <button class="tab" data-filter="coffee">Coffee</button>
+      <button class="tab" data-filter="food">Food</button>
+      <button class="tab" data-filter="dessert">Desserts</button>
+    </div>
+    <div class="items">
+      <article class="item" data-cat="coffee"><div class="head"><h3>Espresso</h3><span class="price">$3</span></div><p>Rich, bold single shot.</p></article>
+      <article class="item" data-cat="coffee"><div class="head"><h3>Cappuccino</h3><span class="price">$4</span></div><p>Espresso, steamed milk and silky foam.</p></article>
+      <article class="item" data-cat="coffee"><div class="head"><h3>Iced Latte</h3><span class="price">$4.5</span></div><p>Cold, smooth and refreshing.</p></article>
+      <article class="item" data-cat="food"><div class="head"><h3>Grilled Chicken Sandwich</h3><span class="price">$9</span></div><p>Toasted bun, fresh greens, house sauce.</p></article>
+      <article class="item" data-cat="food"><div class="head"><h3>Margherita Pizza</h3><span class="price">$11</span></div><p>Tomato, mozzarella, fresh basil.</p></article>
+      <article class="item" data-cat="food"><div class="head"><h3>Caesar Salad</h3><span class="price">$8</span></div><p>Crisp romaine, parmesan, croutons.</p></article>
+      <article class="item" data-cat="dessert"><div class="head"><h3>Chocolate Cake</h3><span class="price">$6</span></div><p>Three layers of rich dark chocolate.</p></article>
+      <article class="item" data-cat="dessert"><div class="head"><h3>Cheesecake</h3><span class="price">$6.5</span></div><p>Creamy, with berry sauce.</p></article>
+      <article class="item" data-cat="dessert"><div class="head"><h3>Tiramisu</h3><span class="price">$7</span></div><p>Classic Italian, made fresh daily.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 5. GALLERY (images/g1.svg ... g6.svg) ========== -->
+<section id="gallery" class="section">
+  <div class="container">
+    <p class="eyebrow center">Gallery</p><h2 class="center">A Taste of Our Place</h2>
+    <div class="gallery">
+      <div style="--img:url(images/g1.svg)"></div><div style="--img:url(images/g2.svg)"></div><div style="--img:url(images/g3.svg)"></div>
+      <div style="--img:url(images/g4.svg)"></div><div style="--img:url(images/g5.svg)"></div><div style="--img:url(images/g6.svg)"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 6. RESERVATION ==========
+ The form is front-end only. To receive emails, set action to your Formspree/Getform URL (see documentation). -->
+<section id="reserve" class="section alt">
+  <div class="container narrow">
+    <p class="eyebrow center">Reservation</p><h2 class="center">Book Your Table</h2>
+    <form class="form" action="#" method="post">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="tel" name="phone" placeholder="Phone" required>
+      <input type="date" name="date" required>
+      <input type="time" name="time" required>
+      <select name="guests"><option>1 guest</option><option>2 guests</option><option>3-4 guests</option><option>5+ guests</option></select>
+      <textarea name="note" rows="3" placeholder="Special requests (optional)"></textarea>
+      <button class="btn" type="submit">Reserve Now</button>
+    </form>
+  </div>
+</section>
+
+<!-- ========== 7. CONTACT & HOURS ========== -->
+<section id="contact" class="section">
+  <div class="container grid3">
+    <div><h3>Address</h3><p>123 Main Street<br>Cairo, Egypt</p></div>
+    <div><h3>Opening Hours</h3><p>Sat – Thu: 9am – 12am<br>Friday: 1pm – 1am</p></div>
+    <div><h3>Contact</h3><p>+20 100 000 0000<br>hello@yoursite.com</p></div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container">© 2026 Tasty Corner. All rights reserved. &nbsp;·&nbsp; <a href="#">Instagram</a> · <a href="#">Facebook</a></div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

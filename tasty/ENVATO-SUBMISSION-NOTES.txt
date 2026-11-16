@@ -1,0 +1,29 @@
+ITEM TITLE (suggested): Tasty Corner - Restaurant & Cafe HTML Template
+
+DESCRIPTION (copy/paste):
+Tasty Corner is a clean, modern and fully responsive HTML template for restaurants, cafes, bakeries and food businesses.
+
+Features
+- 4 ready pages: Home, About, Menu, Contact
+- Fully responsive (mobile, tablet, desktop)
+- Menu with filter tabs on the home page
+- Reservation form (works with Formspree)
+- Google Map section
+- RTL ready (Arabic)
+- Easy color change from one place (CSS variables)
+- Pure HTML5, CSS3, vanilla JS (no jQuery/Bootstrap)
+- Well documented
+
+Credits: Google Fonts (Playfair Display, Poppins). All images are original vector illustrations included in the package.
+
+TAGS: restaurant, cafe, coffee shop, food, menu, bakery, reservation, responsive, html5, css3, rtl
+
+CATEGORY: Site Templates > Retail > Restaurants & Cafes (or similar)
+SOFTWARE VERSION: HTML5. FILES INCLUDED: HTML, CSS, JS, SVG.
+
+BEFORE UPLOADING (checklist)
+[ ] Replace placeholder text/team names with realistic sample text
+[ ] Run every page through validator.w3.org
+[ ] Make Thumbnail 80x80, Preview 590x300, Screenshots (desktop+mobile) and host a Live Preview
+[ ] Check that no image or font is used without a license
+[ ] Zip ONLY the "tasty" folder

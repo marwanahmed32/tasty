@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><!-- Arabic site? use lang="ar" dir="rtl" (see documentation) -->
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Tasty Corner</title><meta name="description" content="Find us, call us or book a table.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<!-- NAVBAR: edit logo + links here (same block on every page) -->
+<header class="nav"><div class="container nav-in"><a href="index.html" class="logo">Tasty<span>Corner</span></a>
+<nav id="menu"><a href="index.html">Home</a><a href="about.html">About</a><a href="menu.html">Menu</a><a href="contact.html" class='active'>Contact</a><a href="contact.html#reserve" class="btn sm">Book a Table</a></nav><button class="burger" id="burger" aria-label="Menu">&#9776;</button></div></header>
+<section class="page-hero"><div class="container"><p class="eyebrow">Say hello</p><h1>Contact Us</h1></div></section>
+<section class="section"><div class="container grid3 cards">
+<div class="card"><h3>Address</h3><p>123 Main Street<br>Cairo, Egypt</p></div>
+<div class="card"><h3>Opening Hours</h3><p>Sat - Thu: 9am - 12am<br>Friday: 1pm - 1am</p></div>
+<div class="card"><h3>Get in touch</h3><p>+20 100 000 0000<br>hello@yoursite.com</p></div></div></section>
+<section id="reserve" class="section alt"><div class="container narrow"><p class="eyebrow center">Reservation</p><h2 class="center">Book Your Table</h2><form class="form" action="#" method="post"><!-- set action to your Formspree URL -->
+<input type="text" name="name" placeholder="Your name" required><input type="tel" name="phone" placeholder="Phone" required>
+<input type="date" name="date" required><input type="time" name="time" required>
+<select name="guests"><option>1 guest</option><option>2 guests</option><option>3-4 guests</option><option>5+ guests</option></select>
+<input type="email" name="email" placeholder="Email (optional)">
+<textarea name="note" rows="3" placeholder="Special requests (optional)"></textarea><button class="btn" type="submit">Reserve Now</button></form></div></section>
+<section class="section"><div class="container"><!-- MAP: in Google Maps click Share > Embed a map, paste the new src below -->
+<iframe class="map" title="Map" loading="lazy" src="https://www.google.com/maps?q=Cairo&output=embed"></iframe></div></section>
+<footer class="footer"><div class="container">&copy; 2026 Tasty Corner. All rights reserved. &nbsp;&middot;&nbsp; <a href="#">Instagram</a> &middot; <a href="#">Facebook</a> &middot; <a href="#">TikTok</a></div></footer>
+<script src="js/main.js"></script></body></html>
